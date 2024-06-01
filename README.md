@@ -1,6 +1,14 @@
 # Authfy
 Authfy é um componente de autenticação de login e senha que permite adicionar, verificar e gerenciar contas de usuário em um sistema. Ele oferece funcionalidades como adicionar uma nova conta, verificar se um login já está em uso, verificar se as credenciais (login e senha) são válidas, trocar a senha de um usuário, deletar uma conta e verificar se uma conta foi deletada. Essas funcionalidades permitem um controle eficaz sobre as contas de usuário, garantindo a segurança e a integridade do sistema.
 
+# Features
+1. Adicionar Conta: Permite adicionar uma nova conta de usuário ao sistema.
+2. Verificar Login Existente: Verifica se um determinado nome de usuário já existe no sistema.
+3. Verificar Credenciais: Verifica se um par de nome de usuário e senha é válido.
+4. Trocar Senha: Permite que um usuário troque sua senha atual por uma nova.
+5. Deletar Conta: Permite excluir uma conta de usuário do sistema.
+6. Verificar Conta Deletada: Verifica se uma conta de usuário foi corretamente excluída do sistema.
+
 # Metodos
 Adicionar Conta:
 

@@ -73,7 +73,9 @@ Esses métodos permitem interagir com as contas de usuário no sistema, desde a 
   }
   ```
   Substitua jdbc:mysql://localhost:3306/database_name pela URL do seu banco de dados, username pelo nome de usuário do banco de dados e password pela senha do banco de dados.
+  
 2. Armazene o arquivo JSON: Armazene o arquivo JSON em um local acessível pelo seu código. Por exemplo, você pode colocar o arquivo na pasta src/main/resources do seu projeto.
+
 3. Configure o componente para ler o arquivo JSON: No seu código, utilize a classe DatabaseConfigurator para ler as informações do arquivo JSON e configurar a conexão com o banco de dados. Por exemplo:
 ```java
   // Substitua pelo caminho do arquivo de configuração do banco de dados

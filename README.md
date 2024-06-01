@@ -63,3 +63,28 @@ boolean contaDeletada = contaManager.verificarContaDeletada("usuario_teste");
 
 Esses métodos permitem interagir com as contas de usuário no sistema, desde a adição até a exclusão e verificação de credenciais.
 
+# Conexão com um banco de dados
+1. Crie um arquivo JSON: Crie um arquivo JSON contendo as informações de configuração do seu banco de dados. Por exemplo:
+  ```json
+  {
+    "url": "jdbc:mysql://localhost:3306/database_name",
+    "username": "username",
+    "password": "password"
+  }
+  ```
+  Substitua jdbc:mysql://localhost:3306/database_name pela URL do seu banco de dados, username pelo nome de usuário do banco de dados e password pela senha do banco de dados.
+2. Armazene o arquivo JSON: Armazene o arquivo JSON em um local acessível pelo seu código. Por exemplo, você pode colocar o arquivo na pasta src/main/resources do seu projeto.
+3. Configure o componente para ler o arquivo JSON: No seu código, utilize a classe DatabaseConfigurator para ler as informações do arquivo JSON e configurar a conexão com o banco de dados. Por exemplo:
+```java
+  // Substitua pelo caminho do arquivo de configuração do banco de dados
+String configFile = "path_to_config.json";
+
+// Crie uma instância de DatabaseConfigurator a partir do arquivo JSON
+DatabaseConfigurator dbConfigurator = DatabaseConfigurator.fromConfigFile(configFile);
+
+// Use dbConfigurator para obter uma conexão com o banco de dados
+Connection connection = dbConfigurator.getConnection();
+```
+Certifique-se de substituir "path_to_config.json" pelo caminho real do seu arquivo JSON.
+
+Com esses passos, você configurou seu banco de dados usando um arquivo JSON no seu componente. Certifique-se de manter as informações de configuração do banco de dados seguras e não compartilhá-las publicamente.

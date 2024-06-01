@@ -78,7 +78,7 @@ Esses métodos permitem interagir com as contas de usuário no sistema, desde a 
 
 3. Configure o componente para ler o arquivo JSON: No seu código, utilize a classe DatabaseConfigurator para ler as informações do arquivo JSON e configurar a conexão com o banco de dados. Por exemplo:
 ```java
-  // Substitua pelo caminho do arquivo de configuração do banco de dados
+// Substitua pelo caminho do arquivo de configuração do banco de dados
 String configFile = "path_to_config.json";
 
 // Crie uma instância de DatabaseConfigurator a partir do arquivo JSON

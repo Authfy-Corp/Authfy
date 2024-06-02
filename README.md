@@ -94,11 +94,11 @@ Com esses passos, você configurou seu banco de dados usando um arquivo JSON no 
 # Adicionar ao seu POM
 ```pom
 
-<dependency>
-		    <groupId>org.json</groupId>
-		    <artifactId>json</artifactId>
-		    <version>20240303</version>
-		</dependency>
+	<dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20240303</version>
+	</dependency>
 		
 		<!-- Dependência para leitura de arquivos JSON (opcional, se necessário) -->
         <dependency>
@@ -122,6 +122,6 @@ Com esses passos, você configurou seu banco de dados usando um arquivo JSON no 
         	<groupId>desafio.caio.ASComponent</groupId>
         	<artifactId>ASComponent</artifactId>
         	<version>0.0.1-SNAPSHOT</version>
-</dependency>
+	</dependency>
 
 ´´´

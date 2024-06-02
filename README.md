@@ -122,6 +122,6 @@ Com esses passos, você configurou seu banco de dados usando um arquivo JSON no 
         	<groupId>desafio.caio.ASComponent</groupId>
         	<artifactId>ASComponent</artifactId>
         	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
+</dependency>
 
 ´´´

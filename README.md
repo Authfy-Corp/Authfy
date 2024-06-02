@@ -90,3 +90,38 @@ Connection connection = dbConfigurator.getConnection();
 Certifique-se de substituir "path_to_config.json" pelo caminho real do seu arquivo JSON.
 
 Com esses passos, você configurou seu banco de dados usando um arquivo JSON no seu componente. Certifique-se de manter as informações de configuração do banco de dados seguras e não compartilhá-las publicamente.
+
+# Adicionar ao seu POM
+```pom
+
+<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20240303</version>
+		</dependency>
+		
+		<!-- Dependência para leitura de arquivos JSON (opcional, se necessário) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.12.1</version>
+        </dependency>
+        
+        <!-- Dependência para manipulação de arquivos (opcional, se necessário) -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>caio.desafio</groupId>
+        	<artifactId>App-a</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+        	<groupId>desafio.caio.ASComponent</groupId>
+        	<artifactId>ASComponent</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+´´´

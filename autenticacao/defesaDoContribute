@@ -1,0 +1,13 @@
+Segurança da senha: Embora esteja usando um bom algoritmo de hash (SHA-256), é importante considerar técnicas adicionais para aumentar a segurança das senhas, como adicionar um salt (um valor aleatório único concatenado à senha antes de fazer o hash). Isso torna os hashes das senhas menos vulneráveis a ataques de dicionário e força bruta.
+
+Uso de RuntimeException: O uso de RuntimeException para lidar com erros de algoritmo de hash pode ser aceitável para uma aplicação simples, mas em um cenário mais complexo, pode ser preferível lidar com exceções de forma mais específica e ter um tratamento de erro mais robusto.
+
+Validação de Entrada: Pode ser útil adicionar validação de entrada para garantir que os valores passados para login e senha não sejam nulos ou vazios.
+
+Nomes de Método: Os nomes dos métodos hashPassword e hashPasswordStatic são descritivos e adequados, mas considerando que eles estão lidando com senhas, pode ser benéfico renomeá-los para refletir isso de forma mais clara, como hashAndEncodePassword.
+
+Método hashPasswordStatic: Você já tem um método hashPassword que faz a mesma coisa que o método hashPasswordStatic. Em vez de duplicar a lógica, você pode simplesmente chamar hashPassword de métodos externos à classe.
+
+Armazenamento de Senha: É sempre uma boa prática evitar armazenar senhas em texto simples. No entanto, você está armazenando hashes das senhas, o que é uma prática muito melhor. Certifique-se de que não haja nenhum vazamento acidental das senhas em texto simples em qualquer parte do seu sistema.
+
+Geração de ID: Embora sua abordagem de geração de IDs funcione para uma aplicação simples, ela pode não ser ideal para um sistema distribuído ou de alta concorrência. Considere usar técnicas mais avançadas, como UUIDs, para garantir a unicidade dos IDs em ambientes distribuídos.
